@@ -128,7 +128,7 @@ export function HowItWorks() {
 				<div className='mt-10'>
 					<a
 						href='#create-account'
-						className='inline-flex h-[56px] items-center justify-center rounded-[8px] bg-[#1687ff] px-7 text-[14px] font-extrabold tracking-[-0.03em] text-white shadow-[0_16px_30px_rgba(22,135,255,0.2)] transition-colors duration-200 hover:bg-[#0f78eb]'
+						className='inline-flex h-[56px] items-center justify-center rounded-[8px] bg-[#1687ff] px-7 text-[14px] font-[500] tracking-[-0.03em] !text-white shadow-[0_16px_30px_rgba(22,135,255,0.2)] transition-colors duration-200 hover:bg-[#0f78eb]'
 					>
 						{steps[activeIndex]?.cta ?? "Start in 3 minutes"}
 					</a>

@@ -15,7 +15,7 @@ export function Header() {
 					<ImageAsset
 						src='logo-white.png'
 						alt='vibo.tips'
-						className='h-[50px] w-[166px] overflow-hidden rounded-md'
+						className='h-[40px] w-[150px] overflow-hidden rounded-md'
 						placeholderText='logo-white.png'
 					/>
 				</a>
@@ -35,14 +35,14 @@ export function Header() {
 				<div className='flex items-center gap-4 sm:gap-6 lg:gap-10'>
 					<a
 						href='#signin'
-						className='hidden text-[17px] font-extrabold tracking-[-0.02em] text-white transition-opacity duration-200 hover:opacity-75 md:block'
+						className='!text-white hidden text-[17px] font-extrabold tracking-[-0.02em] text-white transition-opacity duration-200 hover:opacity-75 md:block'
 					>
 						Sign in
 					</a>
 
 					<a
 						href='#create-account'
-						className='inline-flex h-[50px] items-center justify-center rounded-[10px] bg-[#1687ff] px-5 text-center text-[16px] font-extrabold tracking-[-0.02em] text-white transition-colors duration-200 hover:bg-[#0f78eb] sm:h-[54px] sm:px-7 lg:h-[63px] lg:px-[26px] lg:text-[17px]'
+						className='!text-white inline-flex h-[62px] items-center justify-center rounded-[10px] bg-[#1687ff] px-5 text-center text-[16px] font-extrabold tracking-[-0.02em] text-white transition-colors duration-200 hover:bg-[#0f78eb] sm:h-[54px] lg:h-[62px]  lg:text-[16px] w-[197px]'
 					>
 						Create free account
 					</a>

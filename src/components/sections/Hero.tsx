@@ -32,7 +32,7 @@ export function Hero() {
 					<div className='mt-10 flex justify-center lg:mt-[29px]'>
 						<a
 							href='#watch-demo'
-							className='inline-flex h-[62px] min-w-[145px] items-center justify-center rounded-[10px] bg-white px-8 text-[16px] font-extrabold tracking-[-0.03em] text-[#111111] shadow-[0_18px_36px_rgba(0,0,0,0.12)] transition-transform duration-200 hover:-translate-y-0.5'
+							className='inline-flex h-[62px] min-w-[145px] items-center justify-center rounded-[10px] bg-white px-8 text-[16px] font-extrabold tracking-[-0.03em] !text-[#111111] shadow-[0_18px_36px_rgba(0,0,0,0.12)] transition-transform duration-200 hover:-translate-y-0.5'
 						>
 							Watch demo
 						</a>

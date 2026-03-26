@@ -35,7 +35,7 @@ export function Benefits() {
 				<section className='relative overflow-hidden'>
 					<div className='px-0 pb-3 pt-2'>
 						<div className='px-0 pt-[2px]'>
-							<h2 className='text-[40px] font-extrabold leading-[0.96] tracking-[-0.06em] text-[#111111] sm:text-[52px] lg:text-[58px]'>
+							<h2 className='text-[40px] font-medium leading-[0.96] tracking-[-0.06em] text-[#111111] sm:text-[52px] lg:text-[58px]'>
 								You can use it anywhere
 							</h2>
 							<p className='mt-[6px] max-w-[420px] text-[14px] font-medium leading-[1.45] tracking-[-0.02em] text-[#7b7f86]'>

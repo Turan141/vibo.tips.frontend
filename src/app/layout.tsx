@@ -1,10 +1,61 @@
 import type { Metadata } from "next"
-import { Manrope } from "next/font/google"
+import localFont from "next/font/local"
 import "./globals.css"
 
-const manrope = Manrope({
-	variable: "--font-manrope",
-	subsets: ["latin"]
+const euclidCircular = localFont({
+	variable: "--font-euclid-circular",
+	src: [
+		{
+			path: "../../public/font/Euclid Circular B Light.ttf",
+			weight: "300",
+			style: "normal"
+		},
+		{
+			path: "../../public/font/Euclid Circular B Light Italic.ttf",
+			weight: "300",
+			style: "italic"
+		},
+		{
+			path: "../../public/font/Euclid Circular B Regular.ttf",
+			weight: "400",
+			style: "normal"
+		},
+		{
+			path: "../../public/font/Euclid Circular B Italic.ttf",
+			weight: "400",
+			style: "italic"
+		},
+		{
+			path: "../../public/font/Euclid Circular B Medium.ttf",
+			weight: "500",
+			style: "normal"
+		},
+		{
+			path: "../../public/font/Euclid Circular B Medium Italic.ttf",
+			weight: "500",
+			style: "italic"
+		},
+		{
+			path: "../../public/font/Euclid Circular B SemiBold.ttf",
+			weight: "600",
+			style: "normal"
+		},
+		{
+			path: "../../public/font/Euclid Circular B SemiBold Italic.ttf",
+			weight: "600",
+			style: "italic"
+		},
+		{
+			path: "../../public/font/Euclid Circular B Bold.ttf",
+			weight: "700",
+			style: "normal"
+		},
+		{
+			path: "../../public/font/Euclid Circular B Bold Italic.ttf",
+			weight: "700",
+			style: "italic"
+		}
+	]
 })
 
 export const metadata: Metadata = {
@@ -18,7 +69,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang='en' className={`${manrope.variable} h-full antialiased`}>
+		<html lang='en' className={`${euclidCircular.variable} h-full antialiased`}>
 			<body className='min-h-full flex flex-col'>{children}</body>
 		</html>
 	)

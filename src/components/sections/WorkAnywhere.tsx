@@ -64,7 +64,7 @@ export function WorkAnywhere() {
 					<button
 						type='button'
 						onClick={() => scrollSlider("left")}
-						className='flex h-11 w-11 items-center justify-center rounded-full border border-[#d5deed] text-[20px] transition-colors duration-200 hover:border-[#111111]'
+						className='cursor-pointer !font-bold flex h-11 w-11 items-center justify-center rounded-full !text-[24px] transition-colors duration-200 hover:border-[#111111]'
 						aria-label='Previous professions'
 					>
 						←
@@ -72,7 +72,7 @@ export function WorkAnywhere() {
 					<button
 						type='button'
 						onClick={() => scrollSlider("right")}
-						className='flex h-11 w-11 items-center justify-center rounded-full border border-[#d5deed] text-[20px] transition-colors duration-200 hover:border-[#111111]'
+						className='cursor-pointer !font-bold flex h-11 w-11 items-center justify-center rounded-full !text-[24px] transition-colors duration-200 hover:border-[#111111]'
 						aria-label='Next professions'
 					>
 						→
