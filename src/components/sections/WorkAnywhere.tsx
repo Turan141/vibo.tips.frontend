@@ -88,7 +88,7 @@ export function WorkAnywhere() {
 					<article
 						key={profession.title}
 						data-work-card='true'
-						className='group relative h-[194px] min-w-[166px] flex-none overflow-hidden rounded-[10px] shadow-[0_16px_30px_rgba(26,32,56,0.12)] sm:h-[222px] sm:min-w-[190px] lg:h-[194px] lg:min-w-[258px]'
+						className='group relative h-[340px] min-w-[166px] flex-none overflow-hidden rounded-[10px] shadow-[0_16px_30px_rgba(26,32,56,0.12)] sm:h-[222px] sm:min-w-[190px] lg:h-[340px] lg:min-w-[288px]'
 					>
 						<ImageAsset
 							src={profession.image}

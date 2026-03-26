@@ -74,8 +74,8 @@ export function HowItWorks() {
 					{steps.map((step, index) => (
 						<article
 							key={step.number}
-							className={`group relative min-h-[278px] overflow-hidden rounded-[10px] shadow-[0_18px_34px_rgba(26,32,56,0.12)] transition-[flex-basis,width,transform,opacity] duration-500 ease-out lg:min-h-[274px] ${
-								index === activeIndex ? "lg:basis-[40.7%]" : "lg:basis-[19.75%]"
+							className={`group relative min-h-[278px] overflow-hidden rounded-[10px] shadow-[0_18px_34px_rgba(26,32,56,0.12)] transition-[flex-basis,width,transform,opacity] duration-500 ease-out lg:min-h-[482px] ${
+								index === activeIndex ? "lg:basis-[50%]" : "lg:basis-[19.75%]"
 							}`}
 							onClick={() => {
 								setProgress(0)
