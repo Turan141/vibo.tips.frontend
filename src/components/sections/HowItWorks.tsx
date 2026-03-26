@@ -90,35 +90,47 @@ export function HowItWorks() {
 							/>
 							<div className='absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.22)_0%,transparent_32%)] transition-transform duration-300 group-hover:scale-105' />
 							<div className='absolute inset-x-0 bottom-0 h-[58%] bg-[linear-gradient(180deg,rgba(7,10,16,0)_0%,rgba(7,10,16,0.92)_100%)]' />
-							<div className='relative flex h-full flex-col justify-between p-4 lg:p-5'>
-								<div className='text-[56px] font-medium leading-none tracking-[-0.08em] text-white/78'>
-									{step.number}
-								</div>
-								<div>
-									<h3
-										className={`max-w-[240px] font-extrabold leading-[0.98] tracking-[-0.05em] text-white transition-all duration-500 ${
-											index === activeIndex ? "text-[30px]" : "text-[18px] lg:text-[17px]"
-										}`}
-									>
-										{step.title}
-									</h3>
-									<p
-										className={`mt-[3px] max-w-[220px] font-medium leading-[1.28] tracking-[-0.02em] text-white/82 transition-all duration-500 ${
-											index === activeIndex ? "text-[16px]" : "text-[14px]"
-										}`}
-									>
-										{step.description}
-									</p>
+							<div className='relative flex h-full flex-col justify-between p-4 lg:p-6'>
+								{index !== activeIndex ? (
+									<div className='text-[48px] font-medium leading-none tracking-[-0.06em] text-white/70 lg:text-[56px]'>
+										{step.number}
+									</div>
+								) : (
+									<div />
+								)}
+								<div className='w-full'>
 									{index === activeIndex ? (
-										<div className='mt-5 w-full max-w-[172px]'>
-											<div className='h-[4px] w-full overflow-hidden rounded-full bg-white/25'>
-												<div
-													className='h-full rounded-full bg-[#1687ff] transition-[width] duration-75 ease-linear'
-													style={{ width: `${progress}%` }}
-												/>
+										<div className='flex items-end gap-4'>
+											<div className='text-[52px] font-medium leading-[0.85] tracking-[-0.05em] text-white sm:text-[60px] lg:text-[68px]'>
+												{step.number}
+											</div>
+											<div className='pb-1 w-full'>
+												<h3 className='text-[22px] font-bold leading-[1.1] tracking-[-0.04em] text-white lg:text-[26px]'>
+													{step.title}
+												</h3>
+												<p className='mt-[6px] text-[14px] font-medium leading-[1.3] tracking-[-0.02em] text-white/90'>
+													{step.description}
+												</p>
+												<div className='mt-[22px] w-full max-w-[85%]'>
+													<div className='h-[3px] w-full overflow-hidden rounded-full bg-white/30'>
+														<div
+															className='h-full rounded-full bg-[#1687ff] transition-[width] duration-75 ease-linear'
+															style={{ width: `${progress}%` }}
+														/>
+													</div>
+												</div>
 											</div>
 										</div>
-									) : null}
+									) : (
+										<div>
+											<h3 className='text-[18px] font-bold leading-[1.2] tracking-[-0.03em] text-white/50 lg:text-[20px]'>
+												{step.title}
+											</h3>
+											<p className='mt-[6px] max-w-[200px] text-[14px] font-medium leading-[1.4] tracking-[-0.01em] text-white/40'>
+												{step.description}
+											</p>
+										</div>
+									)}
 								</div>
 							</div>
 						</article>

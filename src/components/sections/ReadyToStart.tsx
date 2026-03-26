@@ -97,27 +97,27 @@ export function ReadyToStart() {
 
 								<div className='relative flex h-full flex-col justify-between p-6 lg:p-8'>
 									{!isActive ? (
-										<div className='text-[36px] font-medium leading-none tracking-[-0.04em] text-white/80 lg:text-[44px]'>
+										<div className='text-[48px] font-medium leading-none tracking-[-0.06em] text-white/70 lg:text-[56px]'>
 											{step.number}
 										</div>
 									) : (
 										<div /> // Spacer
 									)}
 
-									<div className={`flex flex-col ${isActive ? "" : ""}`}>
+									<div className='w-full'>
 										{isActive ? (
-											<div className='flex items-end gap-3'>
-												<div className='text-[44px] font-medium leading-[0.8] tracking-[-0.04em] text-white sm:text-[54px] lg:text-[62px]'>
+											<div className='flex items-end gap-4'>
+												<div className='text-[52px] font-medium leading-[0.85] tracking-[-0.05em] text-white sm:text-[60px] lg:text-[68px]'>
 													{step.number}
 												</div>
 												<div className='pb-1 w-full'>
-													<h3 className='text-[20px] font-bold leading-[1.1] tracking-[-0.03em] text-white sm:text-[24px] lg:text-[22px]'>
+													<h3 className='text-[22px] font-bold leading-[1.1] tracking-[-0.04em] text-white lg:text-[26px]'>
 														{step.title}
 													</h3>
-													<p className='mt-2 text-[14px] font-medium leading-[1.4] tracking-[-0.01em] text-white/80 sm:text-[15px] lg:text-[15px] max-w-[90%]'>
+													<p className='mt-[6px] text-[14px] font-medium leading-[1.3] tracking-[-0.02em] text-white/90'>
 														{step.description}
 													</p>
-													<div className='mt-6 w-full max-w-[85%]'>
+													<div className='mt-[22px] w-full max-w-[85%]'>
 														<div className='h-[3px] w-full overflow-hidden rounded-full bg-white/30'>
 															<div
 																className='h-full rounded-full bg-[#1687ff] transition-[width] duration-75 ease-linear'
@@ -129,10 +129,10 @@ export function ReadyToStart() {
 											</div>
 										) : (
 											<div>
-												<h3 className='text-[16px] font-bold leading-[1.2] tracking-[-0.03em] text-white/90 lg:text-[18px]'>
+												<h3 className='text-[18px] font-bold leading-[1.2] tracking-[-0.03em] text-white/50 lg:text-[20px]'>
 													{step.title}
 												</h3>
-												<p className='mt-2 max-w-[200px] text-[13px] font-medium leading-[1.4] tracking-[-0.01em] text-white/70'>
+												<p className='mt-[6px] max-w-[200px] text-[14px] font-medium leading-[1.4] tracking-[-0.01em] text-white/40'>
 													{step.description}
 												</p>
 											</div>

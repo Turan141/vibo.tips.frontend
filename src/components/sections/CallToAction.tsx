@@ -1,4 +1,3 @@
-import React from "react"
 import { ImageAsset } from "../common/ImageAsset"
 
 export function CallToAction() {

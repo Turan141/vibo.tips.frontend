@@ -121,7 +121,7 @@ function QrSideCard({ column }: { column: QrCardColumn }) {
 export function MultipleQrCardsShowcase() {
 	return (
 		<div className='relative overflow-hidden rounded-[28px] bg-[linear-gradient(to_bottom,#e2e8f8,#ffffff)] px-5 py-8 sm:px-7 sm:py-10 lg:px-36 lg:py-38'>
-			<div className='max-w-[1296px] mx-auto px-12'>
+			<div className='max-w-[1296px] mx-auto'>
 				<div>
 					<h3 className='text-[30px] font-semibold leading-[0.94] tracking-[-0.06em] text-[#101010] sm:text-[38px] lg:text-[50px]'>
 						One account,
@@ -136,7 +136,7 @@ export function MultipleQrCardsShowcase() {
 				<div className='relative mt-8 grid gap-4 lg:mt-[72px] lg:grid-cols-2 lg:gap-0'>
 					<QrSideCard column={multipleQrColumns[0]} />
 
-					<div className='pointer-events-none absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 lg:block z-10'>
+					<div className='pointer-events-none absolute left-1/2 top-1/2 hidden -translate-x-1/3 -translate-y-1/2 lg:block z-10'>
 						<ImageAsset
 							src='phone-mockup.png'
 							alt='Phone mockup'

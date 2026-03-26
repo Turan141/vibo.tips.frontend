@@ -38,7 +38,7 @@ export function SmartAssistant() {
 							value={question}
 							onChange={(e) => setQuestion(e.target.value)}
 							placeholder='Ask a question'
-							className='w-full rounded-[12px] border border-white bg-white py-[22px] pl-6 pr-16 text-[15px] font-medium text-[#111111] shadow-[0_12px_24px_rgba(20,40,70,0.04)] outline-none placeholder:text-[#a0a5b0] focus:border-[#d0e0fb] focus:ring-4 focus:ring-[#eaf2ff] transition-all duration-200 lg:text-[16px]'
+							className='w-full rounded-[12px] border border-gray-200 bg-white py-[22px] pl-6 pr-16 text-[15px] font-medium text-[#111111] shadow-[0_12px_24px_rgba(20,40,70,0.04)] outline-none placeholder:text-[#a0a5b0] focus:border-[#d0e0fb] focus:ring-4 focus:ring-[#eaf2ff] transition-all duration-200 lg:text-[16px]'
 						/>
 						<button
 							type='submit'
